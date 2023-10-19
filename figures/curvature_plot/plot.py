@@ -58,6 +58,9 @@ if __name__ == '__main__':
    sl.plot_gradient(ax2, i_orb-1, forward=True, label=r'$\varepsilon_\mathrm{LU}(N-1)$', ha='right', label_dx=-0.02)
    ax2.set_xlim([0.75, 2.25])
    ax2.set_ylim([-0.25, 1.75])
+   ax2.set_xticks([1, 2])
+   ax2.set_xticklabels(['$N-1$', '$N$'])
+   ax2.set_xlabel('')
    plt.savefig('fig_en_curve_gradients_zoom.pdf', format='pdf')
 
    # plt.figure(f.number)
